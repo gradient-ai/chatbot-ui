@@ -1,0 +1,10 @@
+enabled: true
+name: gradient-ai/chatbot-ui
+image: ghcr.io/gradient-ai/chatbot-ui:latest
+port: 8008
+healthChecks:
+  readiness:
+    path: /
+resources:
+  replicas: 1
+  instanceType: P6000
